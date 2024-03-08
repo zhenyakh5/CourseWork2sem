@@ -3,43 +3,108 @@
 }
 
 body {
-    min-width: 177.778vh;
-    max-height: 231.481vh;
-}
-
-header {
-    display: flex;
-    min-width: 177.778vh;
-    height: 7.778vh;
-    padding: 0 7.037vh;
-    align-items: flex-start;
+    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
     background: #101111;
 }
 
-.wrapper {
+main {
+    position: relative;
+}
+
+main, header {
     display: flex;
-    padding: 1.667vh 0;
+    max-width: 100%;
+    padding: 0 28.704vh;
     justify-content: center;
-    align-items: flex-start;
-    gap: 82.315vh;
-}
-
-.logo {
-    display: flex;
     align-items: center;
-    gap: 1.389vh;
 }
 
-.logo img {
-    width: 4.444vh;
+.particles, .particles img {
+    width: 70.278vh;
+    height: 56.574vh;
+}
+
+.particles {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+header {
+    gap: 19.444vh;
+}
+
+.logo, .logo img {
+    width: 26.296vh;
     height: 4.444vh;
 }
 
-.logo span {
+nav {
+    display: flex;
+    height: 8.889vh;
+    justify-content: center;
+    align-items: center;
+    gap: 3.704vh;
+}
+
+nav span {
     color: #FFF;
-    font-family: Syncopate;
-    font-size: 2.222vh;
+    font-family: Gilroy;
+    font-size: 1.481vh;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 2.222vh;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.963vh;
+}
+
+.download {
+    display: flex;
+    padding: 0.926vh 2.778vh;
+    align-items: center;
+    gap: 0.926vh;
+    border-radius: 1.296vh;
+    background: #5E4FF1;
+}
+
+.download span {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 1.667vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.social {
+    display: flex;
+    width: 6.481vh;
+    align-items: flex-start;
+    gap: 1.296vh;
+}
+
+.social img {
+    width: 2.593vh;
+    height: 2.593vh;
+    flex-shrink: 0;
+}
+
+.policeTapeFirst, .policeTapeFirst img {
+    width: 90.46875vw;
+}
+
+.policeTapeFirst {
+    position: absolute;
+    rotate: 10deg;
+    top: 28.519vh;
+    left: -24.259vh;
 }
