@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb:active {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: -1;
+    z-index: -4;
 }
 
 .firstEllipse {
@@ -71,7 +71,7 @@ body::-webkit-scrollbar-thumb:active {
     position: absolute;
     top: -21.852vh;
     left: -27.963vh;
-    z-index: -2;
+    z-index: -3;
 }
 
 .secondEllipse {
@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb:active {
     position: absolute;
     top: 13.704vh;
     right: 37.963vh;
-    z-index: -2;
+    z-index: -3;
 }
 
 .thirdEllipse {
@@ -99,7 +99,7 @@ body::-webkit-scrollbar-thumb:active {
     position: absolute;
     top: 22.407vh;
     right: 36.574vh;
-    z-index: -2;
+    z-index: -3;
 }
 
 .fourthEllipse {
@@ -113,25 +113,77 @@ body::-webkit-scrollbar-thumb:active {
     position: absolute;
     top: 61.574vh;
     right: 0;
-    z-index: -2;
+    z-index: -3;
 }
 
 .policeTapeFirst, .policeTapeFirst img, .policeTapeSecond, .policeTapeSecond img {
-    width: 90.46875vw;
+    width: 160.833vh;
+    z-index: -2;
 }
 
 .policeTapeFirst {
     position: absolute;
     rotate: 10deg;
-    top: 19.352vh;
-    left: -23.519vh;
+    top: 209px;
+    left: -24.259vh;
 }
 
 .policeTapeSecond {
     position: absolute;
     rotate: -7deg;
     left: -13.148vh;
-    top: 85.093vh;
+    top: 84.259vh;
+}
+
+.firstScreen {
+    display: flex;
+    max-width: 77.037vh;
+    width: 100%;
+    height: 52.222vh;
+    transform: rotate(-7deg);
+    padding: 0.093vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.852vh;
+    border: 0.093vh solid rgba(4, 29, 255, 0.88);
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 17.593vh;
+    right: 18.889vh;
+}
+
+.secondScreen {
+    display: flex;
+    max-width: 77.037vh;
+    width: 100%;
+    height: 52.222vh;
+    transform: rotate(7deg);
+    padding: 0.093vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.852vh;
+    border: 0.093vh solid rgba(4, 29, 255, 0.88);
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 30.556vh;
+    right: -10.648vh;
+    z-index: -1;
+    animation: borderOpacity 1s linear infinite alternate;
+}
+
+@keyframes borderOpacity {
+    from {
+        border-color: rgba(4, 29, 255, 0.88);
+    }
+    to {
+        border-color: rgba(4, 29, 255, 0);
+    }
+}
+
+.appScreen {
+    width: 76.852vh;
+    height: 52.037vh;
+    border-radius: 1.759vh;
 }
 
 header {
@@ -388,6 +440,7 @@ a {
     max-width: 120.37vh;
     width: 100%;
     display: grid;
+    justify-items: center;
     gap: 3.056vh;
     grid-template-columns: 1fr 1fr;
 }
@@ -450,12 +503,297 @@ a {
     z-index: -1;
 }
 
-@media screen and (width < 1300px) {
-    nav {
-        display: none;
-    }
+.subscription {
+    display: flex;
+    padding: 7.407vh 1.852vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    gap: 8.333vh;
+    position: relative;
+}
 
-    .links {
+.subscriptionTextContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4.63vh;
+}
+
+.subscriptionTextContainerHeader {
+    max-width: 58.704vh;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 3.333vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.704vh; /* 111.111% */
+}
+
+.gradient {
+    background: linear-gradient(180deg, #ECC75C 0%, #F07554 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.MHPlus {
+    font-family: Gilroy;
+    font-size: 3.333vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.704vh;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.926vh;
+}
+
+.leftLaurel {
+    width: 26.944vh;
+    height: 26.759vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rightLaurel {
+    width: 26.944vh;
+    height: 26.759vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.benefitsContainer {
+    display: flex;
+    padding: 0.926vh 1.389vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.926vh;
+    border-radius: 0.741vh;
+    background: #252525;
+}
+
+.benefitsTextContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.019vh;
+}
+
+.benefitsText {
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 1.481vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.667vh; /* 115.2% */
+}
+
+.benefitsPercent {
+    display: flex;
+    padding: 0.185vh 0.833vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4.722vh;
+    background: #FFBE60;
+
+    color: #0B0B0F;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 0.833vh;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.arrowIcon {
+    width: 5.278vh;
+    height: 1.296vh;
+}
+
+.benefitsTextDescription {
+    max-width: 33.981vh;
+    width: 100%;
+    color: #7E8285;
+    font-family: Gilroy;
+    font-size: 1.204vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.852vh; /* 150.769% */
+}
+
+.subscriptionsContainer {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-evenly;
+}
+
+.subscriptionContainer {
+    display: flex;
+    padding: 2.963vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.87vh;
+    border-radius: 2.222vh;
+    background: #303030;
+    box-shadow: -2.222vh 2.778vh 11.204vh 2.778vh rgba(48, 48, 48, 0.29);
+}
+
+.subscriptionHeader {
+    display: flex;
+    align-items: center;
+    gap: 1.204vh;
+    align-self: stretch;
+}
+
+.subscriptionHeaderText {
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 2.13vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.87vh; /* 134.783% */
+}
+
+.popular {
+    display: flex;
+    padding: 0.37vh 0.556vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.926vh;
+    border-radius: 0.556vh;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.popularText {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 1.296vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.667vh; /* 128.571% */
+}
+
+.crownIcon {
+    display: flex;
+    width: 1.759vh;
+    height: 1.667vh;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.463vh;
+    align-self: stretch;
+}
+
+.priceContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.926vh;
+    align-self: stretch;
+}
+
+.priceText {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 5.926vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.481vh; /* 109.375% */
+}
+
+.priceAround {
+    color: #7E8285;
+    font-family: Gilroy;
+    font-size: 1.481vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.222vh; /* 150% */
+}
+
+.priceDescription {
+    max-width: 21.296vh;
+    width: 100%;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 1.296vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.944vh; /* 150% */
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.111vh;
+}
+
+.advantage {
+    display: flex;
+    padding: 0.463vh 1.019vh;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.833vh;
+    border-radius: 0.741vh;
+    border: 0.093vh solid rgba(255, 255, 255, 0.07);
+    box-sizing: border-box;
+}
+
+.checkIcon {
+    display: flex;
+    width: 1.481vh;
+    height: 1.111vh;
+}
+
+.advantageText {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 1.296vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.944vh; /* 150% */
+}
+
+.subscriptionButton {
+    display: flex;
+    max-width: 21.296vh;
+    width: 100%;
+    height: 4.352vh;
+    padding: 0.926vh 5.648vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.111vh;
+    background: #FFF;
+}
+
+.subscriptionButtonLabel {
+    color: #000;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 1.481vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.667vh; /* 112.5% */
+}
+
+@media screen and (width < 1300px) {
+    nav, .links, .policeTapeFirst, .policeTapeSecond, .firstScreen, .secondScreen, .particles, .leftLaurel, .rightLaurel {
         display: none;
     }
 
@@ -464,11 +802,12 @@ a {
         height: 4.63vh;
     }
 
-    .policeTapeFirst, .policeTapeSecond {
-        display: none;
-    }
-
     .reviewsContainerWrapper {
         grid-template-columns: 1fr;
+    }
+
+    .subscriptionsContainer {
+        flex-direction: column;
+        gap: 0.926vh;
     }
 }
