@@ -145,11 +145,12 @@ body::-webkit-scrollbar-thumb:active {
     justify-content: center;
     align-items: center;
     border-radius: 1.852vh;
-    border: 0.093vh solid rgba(4, 29, 255, 0.88);
+    border: 0.093vh solid rgba(224, 69, 35, 0.8);
     background: rgba(0, 0, 0, 0.95);
     position: absolute;
     top: 17.593vh;
     right: 18.889vh;
+    animation: borderOpacity 1s linear infinite alternate;
 }
 
 .secondScreen {
@@ -172,9 +173,6 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 @keyframes borderOpacity {
-    from {
-        border-color: rgba(4, 29, 255, 0.88);
-    }
     to {
         border-color: rgba(4, 29, 255, 0);
     }
@@ -792,6 +790,42 @@ a {
     line-height: 1.667vh; /* 112.5% */
 }
 
+.aboutInfo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3.889vh;
+    align-self: stretch;
+}
+
+.aboutInfoContainer {
+    display: flex;
+    padding: 1.389vh 2.778vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2.778vh;
+    align-self: stretch;
+    border-radius: 2.222vh;
+    border: 0.093vh dashed rgba(101, 101, 101, 0.50);
+    background: rgba(67, 67, 67, 0.40);
+    backdrop-filter: blur(2.778vh);
+    box-sizing: border-box;
+}
+
+.aboutInfoIcon {
+    width: 8.704vh;
+    height: 8.333vh;
+}
+
+.aboutInfoText {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Gilroy;
+    font-size: 1.296vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 @media screen and (width < 1300px) {
     nav, .links, .policeTapeFirst, .policeTapeSecond, .firstScreen, .secondScreen, .particles, .leftLaurel, .rightLaurel {
         display: none;
@@ -809,5 +843,9 @@ a {
     .subscriptionsContainer {
         flex-direction: column;
         gap: 0.926vh;
+    }
+
+    .aboutInfo {
+        flex-direction: column;
     }
 }
