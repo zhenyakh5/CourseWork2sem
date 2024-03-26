@@ -864,8 +864,137 @@ a {
     line-height: normal;
 }
 
+footer {
+    background: #000;
+    display: flex;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4.074vh;
+    padding: 7.407vh 0;
+}
+
+.footerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.footerHeaderAppInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.926vh;
+}
+
+.footerHeaderAppInfoText {
+    max-width: 17.963vh;
+    width: 100%;
+    color: #7E8285;
+    font-family: Benzin-Regular;
+    font-size: 1.296vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerHeaderDesignLabel {
+    width: 10vh;
+    height: 1.667vh;
+    opacity: 0.5;
+}
+
+.footerNav {
+    display: flex;
+    width: 74.444vh;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footerNavContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.926vh;
+}
+
+.footerNavLabel {
+    color: #FFF;
+    text-align: center;
+    font-family: Benzin-Medium;
+    font-size: 1.204vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerNavContent {
+    color: #B7B7B7;
+    text-align: center;
+    font-family: Benzin-Regular;
+    font-size: 1.204vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.463vh;
+    align-self: stretch;
+}
+
+.contactUsLabel {
+    color: #B7B7B7;
+    text-align: center;
+    font-family: Benzin-Regular;
+    font-size: 1.111vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contactUsEmail {
+    color: #FFF;
+    text-align: center;
+    font-family: Benzin-Regular;
+    font-size: 1.111vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerLinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.textLinks {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.778vh;
+}
+
+.textLink {
+    color: #7E8285;
+    text-align: center;
+    font-family: Benzin-Regular;
+    font-size: 0.926vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 @media screen and (width < 1300px) {
-    nav, .links, .policeTapeFirst, .policeTapeSecond, .firstScreen, .secondScreen, .particles, .leftLaurel, .rightLaurel {
+    nav, .links, .policeTapeFirst, .policeTapeSecond, .firstScreen, .secondScreen, .particles, .leftLaurel, .rightLaurel, .footerNav {
         display: none;
     }
 
@@ -885,5 +1014,22 @@ a {
 
     .aboutInfo {
         flex-direction: column;
+    }
+
+    .footerHeader {
+        justify-content: center;
+    }
+
+    .contactUs {
+        align-items: center;
+    }
+
+    .footerLinks {
+        justify-content: center;
+    }
+
+    .textLinks {
+        flex-direction: column;
+        align-items: center;
     }
 }
