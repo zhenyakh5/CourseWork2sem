@@ -1,4 +1,23 @@
-@import "css/fonts.css";
+@font-face {
+    font-family: "Benzin-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Benzin-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Benzin-Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Benzin-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Benzin-Semibold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Benzin-Semibold.ttf") format("truetype");
+}
 
 * {
     margin: 0;
@@ -263,11 +282,11 @@ nav {
 
 nav span {
     color: #FFF;
-    font-family: Gilroy;
+    font-family: Benzin-Regular;
     font-size: 1.481vh;
     font-style: normal;
-    font-weight: 700;
-    line-height: 2.222vh;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .links {
@@ -294,11 +313,11 @@ a {
 
 .download span {
     color: #FFF;
-    font-family: Gilroy;
+    font-family: Benzin-Regular;
     font-size: 1.667vh;
     font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .social {
@@ -337,7 +356,6 @@ a {
 }
 
 .userChoice {
-    width: 17.13vh;
     height: 3.519vh;
     border-radius: 0.926vh;
     background: rgba(255, 255, 255, 0.08);
@@ -345,19 +363,27 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding: 0.741vh 1.389vh;
+    box-sizing: border-box;
+    gap: 0.926vh;
 }
 
 .userChoiceContent {
     color: #FFF;
-    font-family: Gilroy;
-    font-size: 1.667vh;
+    font-family: Benzin-Regular;
+    font-size: 1.481vh;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
 }
 
+.trophyIcon {
+    width: 1.667vh;
+    height: 1.667vh;
+}
+
 .userChoiceBackground {
-    width: 15.185vh;
+    width: 17.593vh;
     height: 1.759vh;
     background: #5E4FF1;
     position: absolute;
@@ -375,21 +401,21 @@ a {
 
 .infoTextHeader {
     color: #FFF;
-    font-family: Gilroy;
+    font-family: Benzin-Medium;
     font-size: 4.444vh;
     font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-    align-self: stretch;
+    font-weight: 400;
+    line-height: 110%; /* 52.8px */
+    align-items: stretch;
 }
 
 .infoTextContent {
     color: rgba(255, 255, 255, 0.80);
-    font-family: Gilroy;
+    font-family: Benzin-Regular;
     font-size: 1.667vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.593vh;
+    line-height: normal;
 }
 
 .reviews {
@@ -406,15 +432,15 @@ a {
 }
 
 .reviewsTextHeader {
-    max-width: 58.704vh;
+    max-width: 78.889vh;
     width: 100%;
     color: #FFF;
     text-align: center;
-    font-family: Gilroy;
+    font-family: Benzin-Semibold;
     font-size: 3.333vh;
     font-style: normal;
-    font-weight: 600;
-    line-height: 3.704vh;
+    font-weight: 400;
+    line-height: 3.704vh; /* 111.111% */
 }
 
 .reviewsTextContent {
@@ -422,10 +448,10 @@ a {
     max-width: 48.704vh;
     width: 100%;
     text-align: center;
-    font-family: Gilroy;
+    font-family: Benzin-Regular;
     font-size: 1.667vh;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.852vh; /* 111.111% */
 }
 
@@ -470,21 +496,30 @@ a {
 .quote {
     align-self: stretch;
     color: #FFF;
-    font-family: Gilroy;
+    font-family: Benzin-Regular;
     font-size: 4.444vh;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 2.593vh; /* 58.333% */
 }
 
 .reviewContent {
     align-self: stretch;
     color: #FFF;
-    font-family: Gilroy;
-    font-size: 2.13vh;
+    font-family: Benzin-Regular;
+    font-size: 1.852vh;
     font-style: normal;
-    font-weight: 500;
-    line-height: 2.593vh; /* 121.739% */
+    font-weight: 400;
+    line-height: 2.593vh; /* 140% */
+}
+
+.reviewAuthor {
+    color: #FFF;
+    font-family: Benzin-Regular;
+    font-size: 1.296vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .reviewBackground {
@@ -524,10 +559,10 @@ a {
     width: 100%;
     color: #FFF;
     text-align: center;
-    font-family: Gilroy;
+    font-family: Benzin-Semibold;
     font-size: 3.333vh;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 3.704vh; /* 111.111% */
 }
 
@@ -539,11 +574,11 @@ a {
 }
 
 .MHPlus {
-    font-family: Gilroy;
-    font-size: 3.333vh;
+    font-family: Benzin-Semibold;
+    font-size: 36px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 3.704vh;
+    font-weight: 400;
+    line-height: 40px; /* 111.111% */
 }
 
 .benefits {
@@ -589,11 +624,11 @@ a {
 .benefitsText {
     color: #FFF;
     text-align: center;
-    font-family: Gilroy;
-    font-size: 1.481vh;
+    font-family: Benzin-Medium;
+    font-size: 1.296vh;
     font-style: normal;
-    font-weight: 500;
-    line-height: 1.667vh; /* 115.2% */
+    font-weight: 400;
+    line-height: 1.667vh; /* 128.571% */
 }
 
 .benefitsPercent {
@@ -607,10 +642,11 @@ a {
 
     color: #0B0B0F;
     text-align: center;
-    font-family: Gilroy;
-    font-size: 0.833vh;
+    font-family: Benzin-Regular;
+    font-size: 1.111vh;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
+    line-height: 1.204vh; /* 108.333% */
 }
 
 .arrowIcon {
@@ -622,11 +658,11 @@ a {
     max-width: 33.981vh;
     width: 100%;
     color: #7E8285;
-    font-family: Gilroy;
+    font-family: Benzin-Regular;
     font-size: 1.204vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.852vh; /* 150.769% */
+    line-height: 1.852vh; /* 153.846% */
 }
 
 .subscriptionsContainer {
@@ -641,7 +677,7 @@ a {
     padding: 2.963vh;
     box-sizing: border-box;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 2.87vh;
     border-radius: 2.222vh;
     background: #303030;
@@ -657,11 +693,11 @@ a {
 
 .subscriptionHeaderText {
     text-align: center;
-    font-family: Gilroy;
-    font-size: 2.13vh;
+    font-family: Benzin-Semibold;
+    font-size: 2.037vh;
     font-style: normal;
-    font-weight: 600;
-    line-height: 2.87vh; /* 134.783% */
+    font-weight: 400;
+    line-height: normal;
 }
 
 .popular {
@@ -677,11 +713,11 @@ a {
 
 .popularText {
     color: #FFF;
-    font-family: Gilroy;
-    font-size: 1.296vh;
+    font-family: Benzin-Regular;
+    font-size: 1.111vh;
     font-style: normal;
-    font-weight: 500;
-    line-height: 1.667vh; /* 128.571% */
+    font-weight: 400;
+    line-height: normal;
 }
 
 .crownIcon {
@@ -700,34 +736,35 @@ a {
 
 .priceContainer {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 0.926vh;
+    gap: -0.926vh;
     align-self: stretch;
 }
 
 .priceText {
     color: #FFF;
-    font-family: Gilroy;
-    font-size: 5.926vh;
+    font-family: Benzin-Regular;
+    font-size: 3.704vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 6.481vh; /* 109.375% */
+    line-height: 6.481vh; /* 175% */
 }
 
 .priceAround {
     color: #7E8285;
-    font-family: Gilroy;
-    font-size: 1.481vh;
+    font-family: Benzin-Regular;
+    font-size: 1.111vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 2.222vh; /* 150% */
+    line-height: 2.222vh; /* 200% */
 }
 
 .priceDescription {
     max-width: 21.296vh;
     width: 100%;
     color: #FFF;
-    font-family: Gilroy;
+    font-family: Benzin-Regular;
     font-size: 1.296vh;
     font-style: normal;
     font-weight: 400;
@@ -760,17 +797,15 @@ a {
 
 .advantageText {
     color: #FFF;
-    font-family: Gilroy;
-    font-size: 1.296vh;
+    font-family: Benzin-Regular;
+    font-size: 1.111vh;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.944vh; /* 150% */
+    line-height: 1.944vh; /* 175% */
 }
 
 .subscriptionButton {
     display: flex;
-    max-width: 21.296vh;
-    width: 100%;
     height: 4.352vh;
     padding: 0.926vh 5.648vh;
     box-sizing: border-box;
@@ -783,17 +818,17 @@ a {
 .subscriptionButtonLabel {
     color: #000;
     text-align: center;
-    font-family: Gilroy;
-    font-size: 1.481vh;
+    font-family: Benzin-Medium;
+    font-size: 1.296vh;
     font-style: normal;
-    font-weight: 600;
-    line-height: 1.667vh; /* 112.5% */
+    font-weight: 400;
+    line-height: 1.667vh; /* 128.571% */
 }
 
 .aboutInfo {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 3.889vh;
     align-self: stretch;
 }
@@ -810,17 +845,20 @@ a {
     background: rgba(67, 67, 67, 0.40);
     backdrop-filter: blur(2.778vh);
     box-sizing: border-box;
+    flex: 1 0 0;
 }
 
 .aboutInfoIcon {
     width: 8.704vh;
-    height: 8.333vh;
+    height: 8.241vh;
 }
 
 .aboutInfoText {
+    width: 100%;
+    flex: 1 0 0;
     color: rgba(255, 255, 255, 0.80);
-    font-family: Gilroy;
-    font-size: 1.296vh;
+    font-family: Benzin-Regular;
+    font-size: 1.111vh;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
