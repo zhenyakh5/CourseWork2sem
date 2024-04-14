@@ -110,6 +110,11 @@
   position: absolute;
   animation: borderOpacity 1s linear infinite alternate;
 }
+.firstScreen .appScreen {
+  width: 76.852vh;
+  height: 52.037vh;
+  border-radius: 1.759vh;
+}
 
 .secondScreen {
   transform: rotate(7deg);
@@ -129,16 +134,16 @@
   position: absolute;
   animation: borderOpacity 1s linear infinite alternate;
 }
+.secondScreen .appScreen {
+  width: 76.852vh;
+  height: 52.037vh;
+  border-radius: 1.759vh;
+}
 
 @keyframes borderOpacity {
   to {
     border-color: rgba(4, 29, 255, 0);
   }
-}
-.appScreen {
-  width: 76.852vh;
-  height: 52.037vh;
-  border-radius: 1.759vh;
 }
 
 /*# sourceMappingURL=decor.css.map */

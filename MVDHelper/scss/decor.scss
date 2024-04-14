@@ -20,6 +20,11 @@
   background: rgba(0, 0, 0, 0.95);
   position: absolute;
   animation: borderOpacity 1s linear infinite alternate;
+  .appScreen {
+    width: 76.852vh;
+    height: 52.037vh;
+    border-radius: 1.759vh;
+  }
 }
 
 .particles {
@@ -126,10 +131,4 @@
   to {
     border-color: rgba(4, 29, 255, 0);
   }
-}
-
-.appScreen {
-  width: 76.852vh;
-  height: 52.037vh;
-  border-radius: 1.759vh;
 }
