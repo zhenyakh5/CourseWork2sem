@@ -45,10 +45,10 @@
         <div class="logoText"><img src="assets/icons/logoTextIcon.svg"></div>
     </div>
     <nav>
-        <span>Главная</span>
-        <span>Цены</span>
-        <span>Форум</span>
-        <span>Поддержка</span>
+        <a href="#"><span>Главная</span></a>
+        <span id="priceLink">Цены</span>
+        <a href="https://forum.mvdhelper.ru/"><span>Форум</span></a>
+        <a href="https://mvdhelper.ru/discord"><span>Поддержка</span></a>
     </nav>
     <div class="links">
         <div class="download"><a href="https://www.file.subbotaaa-s.ru/MVDhelp/MVDHelper.exe"><span>Скачать</span></a></div>
@@ -87,7 +87,7 @@
                 <div class="review">
                     <div class="reviewTextContainer">
                         <span class="quote">“</span>
-                        <span class="reviewContent">...MVDHelper закрепился как самый популярный плагин для полицейских...</span>
+                        <span class="reviewContent">MVDHelper закрепился как самый популярный плагин для полицейских...</span>
                         <span class="quote" style="text-align: right">“</span>
                         <span class="reviewAuthor">YouTube - канал<br>Алексеева берлога</span>
                     </div>
@@ -98,9 +98,9 @@
                 <div class="review">
                     <div class="reviewTextContainer">
                         <span class="quote">“</span>
-                        <span class="reviewContent">...MVDHelper закрепился как самый популярный плагин для полицейских...</span>
+                        <span class="reviewContent">Самый лучший плагин в GTA SAMP. Советую его всем и каждому.</span>
                         <span class="quote" style="text-align: right">“</span>
-                        <span class="reviewAuthor">YouTube - канал<br>Алексеева берлога</span>
+                        <span class="reviewAuthor">YouTube - канал<br>Brothers in Company</span>
                     </div>
                 </div>
                 <div class="reviewBackground"></div>
@@ -109,9 +109,9 @@
                 <div class="review">
                     <div class="reviewTextContainer">
                         <span class="quote">“</span>
-                        <span class="reviewContent">...MVDHelper закрепился как самый популярный плагин для полицейских...</span>
+                        <span class="reviewContent">Когда ты нажимаешь на колёсико мыши, у тебя появляются самые удобные бинды для ФБР, которыми я лично пользуюсь.</span>
                         <span class="quote" style="text-align: right">“</span>
-                        <span class="reviewAuthor">YouTube - канал<br>Алексеева берлога</span>
+                        <span class="reviewAuthor">YouTube - канал<br>SPARKS</span>
                     </div>
                 </div>
                 <div class="reviewBackground"></div>
@@ -120,9 +120,9 @@
                 <div class="review">
                     <div class="reviewTextContainer">
                         <span class="quote">“</span>
-                        <span class="reviewContent">...MVDHelper закрепился как самый популярный плагин для полицейских...</span>
+                        <span class="reviewContent">В жизни не видел ничего лучше, чем это приложение! Даже я такие вещи делать не могу, как они.</span>
                         <span class="quote" style="text-align: right">“</span>
-                        <span class="reviewAuthor">YouTube - канал<br>Алексеева берлога</span>
+                        <span class="reviewAuthor">YouTube - канал<br>Sam Mason</span>
                     </div>
                 </div>
                 <div class="reviewBackground"></div>
@@ -130,7 +130,7 @@
         </div>
     </div>
 </main>
-<main class="subscription containerLayout">
+<main id="subscriptions" class="subscription containerLayout">
     <div class="leftLaurel">
         <img src="assets/laurel.svg" class="leftLaurel">
     </div>
@@ -164,26 +164,26 @@
                 <div class="price">
                     <div class="priceContainer">
                         <span class="priceText">₽799</span>
-                        <span class="priceAround">≈₽1/день</span>
+                        <span class="priceAround" style="opacity: 0">≈0/день</span>
                     </div>
-                    <span class="priceDescription">Short description</span>
+                    <span class="priceDescription">Дополнительные функции и утилиты навсегда.</span>
                 </div>
                 <div class="advantages">
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Любой цвет никнейма</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Любой цвет фона</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Любой цвет кнопок</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Приоритет в помощи</span>
                     </div>
                 </div>
                 <div class="subscriptionButton">
@@ -203,24 +203,24 @@
                         <span class="priceText">₽299</span>
                         <span class="priceAround">≈₽1/день</span>
                     </div>
-                    <span class="priceDescription">Short description</span>
+                    <span class="priceDescription">Дополнительные функции и утилиты сроком на 180 дней.</span>
                 </div>
                 <div class="advantages">
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Желтый цвет никнейма</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">100 слотов доп. команд</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">100 слотов для биндера</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Радар «Johnny-3000»</span>
                     </div>
                 </div>
                 <div class="subscriptionButton">
@@ -236,24 +236,24 @@
                         <span class="priceText">₽89</span>
                         <span class="priceAround">≈₽3/день</span>
                     </div>
-                    <span class="priceDescription">Short description</span>
+                    <span class="priceDescription">Дополнительные функции и утилиты сроком на 30 дней.</span>
                 </div>
                 <div class="advantages">
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Желтый цвет никнейма</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">100 слотов доп. команд</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">100 слотов для биндера</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Радар «Johnny-3000»</span>
                     </div>
                 </div>
                 <div class="subscriptionButton">
@@ -269,27 +269,27 @@
                 <span class="priceText">₽69</span>
                 <span class="priceAround">≈₽10/день</span>
             </div>
-            <span class="priceDescription">Short description</span>
+            <span class="priceDescription">Дополнительные функции и утилиты сроком на 7 дней.</span>
         </div>
                 <div class="advantages">
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Желтый цвет никнейма</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">100 слотов доп. команд</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">100 слотов для биндера</span>
                     </div>
                     <div class="advantage">
                         <div class="checkIcon"><img src="assets/icons/checkIcon.svg" class="checkIcon"></div>
-                        <span class="advantageText">Access to 32434 icons</span>
+                        <span class="advantageText">Радар «Johnny-3000»</span>
                     </div>
                 </div>
-                <div class="subscriptionButton">
+                <div class="subscriptionButton" id="subscriptionButton">
                     <span class="subscriptionButtonLabel">Выбрать план</span>
                 </div>
             </div>
@@ -309,6 +309,19 @@
         </div>
     </div>
 </main>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-text">
+            <span id="modalTitle" class="modalTitle">Введите свой email. На него мы отправим дальнешие инструкции по оплате.</span>
+            <div class="modalInput" id="modalInput">
+                <input type="text" id="emailInput" placeholder="Введите ваш email">
+                <div class="download" id="sendEmail"><span>Подтвердить</span></div>
+            </div>
+        </div>
+        <span class="close" id="closeModal">&times;</span>
+    </div>
+</div>
 
 <footer>
     <div class="footerContainer containerLayout">
@@ -330,38 +343,28 @@
             </div>
             <div class="footerNav">
                 <div class="footerNavContainer">
-                    <span class="footerNavLabel">Поддержка</span>
-                    <span class="footerNavContent">Test</span>
-                    <span class="footerNavContent">Test</span>
-                    <span class="footerNavContent">Test</span>
-                    <span class="footerNavContent">Test</span>
-                </div>
-                <div class="footerNavContainer">
-                    <span class="footerNavLabel">Поддержка</span>
-                    <span class="footerNavContent">Test</span>
-                    <span class="footerNavContent">Test</span>
-                    <span class="footerNavContent">Test</span>
-                    <span class="footerNavContent">Test</span>
-                </div>
-                <div class="footerNavContainer">
                     <span class="footerNavLabel">Подписка</span>
-                    <span class="footerNavContent">Цены</span>
-                    <span class="footerNavContent">Test</span>
-                    <span class="footerNavContent">Test</span>
-                    <span class="footerNavContent">Test</span>
+                    <span id="priceLink2" class="footerNavContent">Цены</span>
+                    <a href="https://boosty.to/mvdhelper"><span class="footerNavContent">Boosty</span></a>
+                </div>
+                <div class="footerNavContainer">
+                    <span class="footerNavLabel">Социальные сети</span>
+                    <a href="https://vk.com/skyincru"><span class="footerNavContent">ВКонтакте</span></a>
+                    <a href="https://mvdhelper.ru/tg/"><span class="footerNavContent">Telegram</span></a>
+                    <a href="https://mvdhelper.ru/discord"><span class="footerNavContent">Discord</span></a>
+                    <a href="https://www.youtube.com/user/subbotaaa"><span class="footerNavContent">YouTube</span></a>
                 </div>
                 <div class="footerNavContainer">
                     <span class="footerNavLabel">Поддержка</span>
-                    <span class="footerNavContent">Контакты</span>
-                    <span class="footerNavContent">Политика конфиденциальности</span>
-                    <span class="footerNavContent">Правила и условия</span>
-                    <span class="footerNavContent">Задать вопрос</span>
+                    <a href="https://mvdhelper.ru/document/terms.html"><span class="footerNavContent">Контакты</span></a>
+                    <a href="https://mvdhelper.ru/document/terms.html"><span class="footerNavContent">Пользовательское соглашение</span></a>
+                    <a href="https://mvdhelper.ru/discord"><span class="footerNavContent">Задать вопрос</span></a>
                 </div>
             </div>
         </div>
         <div class="contactUs">
             <span class="contactUsLabel">Связаться с нами</span>
-            <span class="contactUsEmail">info@skyinc.ru</span>
+            <a href="mailto:info@skyinc.ru"><span class="contactUsEmail">info@skyinc.ru</span></a>
         </div>
         <div class="footerLinks">
             <div class="links">
@@ -371,9 +374,7 @@
                 </div>
             </div>
             <div class="textLinks">
-                <span class="textLink">Условия использования</span>
-                <span class="textLink">Наши контакты</span>
-                <span class="textLink">2024 MVDHelper</span>
+                <span class="textLink">&copy; MVDHelper 2024</span>
             </div>
         </div>
         <iframe src="xml/footer.xml" style="width: 100%; height: 8vh" frameborder="0"></iframe>
@@ -381,5 +382,7 @@
 </footer>
 
 </body>
+
+<script type="text/javascript" src="script.js"></script>
 
 </html>
