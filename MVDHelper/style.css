@@ -1016,7 +1016,7 @@ footer {
 }
 
 @media screen and (width < 1300px){
-    nav {
+    nav, .policeTapeSecond, .policeTapeFirst, .particles  {
         display: none !important;
     }
 
